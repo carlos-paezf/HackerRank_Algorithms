@@ -54,8 +54,8 @@ const diagonalDifference = (arr) => {
     let y = arr.length - 1
 
     for (let i = 0; i < arr.length; i++) {
-        left_to_right += arr[i][x]
-        right_to_left += arr[i][y]
+        left_to_right += (-100 <= arr[i][x] && arr[i][x] <= 100) ? arr[i][x] : 0
+        right_to_left += (-100 <= arr[i][y] && arr[i][y] <= 100) ? arr[i][y] : 0
         x++
         y--
     }
