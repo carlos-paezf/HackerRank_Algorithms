@@ -14,17 +14,22 @@ let inputString = ''
 let currentLine = 0
 
 
+/* Listening for the end of the input stream and then calling the main function. */
 process.stdin.on('data', (inputStdin) => {
     inputString += inputStdin
 })
 
 
+/* Listening for the end of the input stream and then calling the main function. */
 process.stdin.on('end', () => {
     inputString = inputString.split('\n')
     main()
 })
 
 
+/**
+ * It reads a line from the input string and returns it
+ */
 const readLine = () => inputString[currentLine++]
 
 
@@ -36,6 +41,12 @@ const readLine = () => inputString[currentLine++]
  */
 
 
+/**
+ * Given an array of arrays, return the absolute difference between the sums of its diagonals
+ * @param arr - an array of integers
+ * @returns The absolute value of the difference between the sum of the numbers in the left-to-right
+ * diagonal and the right-to-left diagonal.
+ */
 const diagonalDifference = (arr) => {
     let left_to_right = 0 
     let right_to_left = 0
@@ -53,6 +64,9 @@ const diagonalDifference = (arr) => {
 }
 
 
+/**
+ * Given a square matrix, calculate the absolute difference between the sums of its diagonals
+ */
 const main = () => {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH)
 
