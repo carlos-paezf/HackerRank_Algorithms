@@ -25,8 +25,8 @@ def diagonalDifference(arr):
     x, y = 0, len(arr) - 1
 
     for i in range(len(arr)):
-        left_to_right += arr[i][x]
-        right_to_left += arr[i][y]
+        left_to_right += arr[i][x] if -100 <= arr[i][x] <= 100 else 0
+        right_to_left += arr[i][y] if -100 <= arr[i][y] <= 100 else 0
         x += 1
         y -= 1
 
