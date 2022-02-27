@@ -12,6 +12,14 @@ Created on Sun Feb 27 2022
 #
 
 def plusMinus(n, arr):
+    """
+    Given an array of integers, calculate the ratios of its elements that are positive, negative, and
+    are zeros. 
+    Print the decimal value of each fraction on a new line with 6 places after the decimal
+    
+    :param n: the integer number of items in the array
+    :param arr: an array of integers
+    """
     pos, neg, zero = 0, 0, 0
     if 0 < n <= 100:
         for i in range(n):
