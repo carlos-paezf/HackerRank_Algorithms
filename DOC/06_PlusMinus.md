@@ -36,8 +36,8 @@ The second line contains `n` space-separated integers that describe `arr[n]`.
 
 ## Constraints
 
-0 < n <= 100
--100 <= arr[i] <= 100
+- 0 < n <= 100
+- -100 <= arr[i] <= 100
 
 ## Output Format
 
