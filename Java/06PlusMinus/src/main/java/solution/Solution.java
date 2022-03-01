@@ -16,6 +16,13 @@ import static java.util.stream.Collectors.toList;
  * @author Carlos Páez
  */
 class Result {
+    /**
+     * Given an array of integers, calculate the ratios of positive, negative, and zero values in the
+     * array
+     * 
+     * @param n the integer number of items in the array
+     * @param arr an array of integers
+     */
     public static void plusMinus(int n, List<Integer> arr) {
         float pos = 0, neg = 0, zero = 0;
 
@@ -45,6 +52,9 @@ class Result {
 }
 
 public class Solution {
+    /**
+     * Print the fraction of positive, negative, and zero elements in an array
+     */
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
