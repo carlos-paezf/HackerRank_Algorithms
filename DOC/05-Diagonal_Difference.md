@@ -30,7 +30,7 @@ Each of the next `n` lines describes a row, `arr[i]`, and consists of `n` space-
 
 ## Constraints
 
-- -100 <= arr[i][j] <= 100
+- -100 <= `arr[i][j]` <= 100
 
 ## Output Format
 
