@@ -35,18 +35,11 @@ def gradingStudents(grades: list[int]) -> list[int]:
     :param grades: an array of integers representing grades before rounding
     :return: a list of rounded grades.
     """
-    result = []
-
-    for grade in grades:
-        if grade < 0 or 100 < grade:
-            print('The grade is in an impermissible range')
-        nm5 = _round_up_to_next_multiple_of_5(grade)
-        result.append(
-            nm5 if grade >= 38 and nm5 - grade < 3
-            else grade
-        )
-
-    return result
+    return [
+        _round_up_to_next_multiple_of_5(grade) if grade >= 38 and _round_up_to_next_multiple_of_5(grade) - grade < 3
+        else grade
+        for grade in grades
+    ]
 
 
 if __name__ == '__main__':
