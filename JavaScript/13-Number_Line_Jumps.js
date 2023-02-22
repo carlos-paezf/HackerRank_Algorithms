@@ -45,6 +45,15 @@ function readLine () {
  *  4. INTEGER v2
  */
 
+/**
+ * If the kangaroos are not moving at the same speed, and the distance between them is divisible by the
+ * difference in their speeds, then they will meet
+ * @param x1 - starting position for kangaroo 1
+ * @param v1 - Kangaroo 1's jump distance (in meters)
+ * @param x2 - starting position of kangaroo 2
+ * @param v2 - the speed of the second kangaroo
+ * @returns a string.
+ */
 function kangaroo (x1, v1, x2, v2) {
     const maxLimit = 10000
 
