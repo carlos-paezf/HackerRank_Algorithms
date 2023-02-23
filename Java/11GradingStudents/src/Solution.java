@@ -9,6 +9,11 @@ import java.util.stream.IntStream;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
+/**
+ * Created on Mon Feb 20 2023
+ * 
+ * @author Carlos Páez
+ */
 class Result {
     /**
      * Complete the 'gradingStudents' function below
