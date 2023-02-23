@@ -19,14 +19,21 @@ from functools import reduce
 
 def getTotalX(a, b):
     """
-    We find the least common multiple of the first array, and the greatest common divisor of the second
-    array. Then we count the number of multiples of the least common multiple that evenly divide the
-    greatest common divisor
+    It returns the number of integers between the least common multiple of the first array and the
+    greatest common divisor of the second array that are divisible by the least common multiple of the
+    first array
 
     :param a: an array of integers
     :param b: [2, 4]
-    :return: The number of integers that are between two sets.
+    :return: The number of integers that are between two arrays.
     """
+    if not (1 <= len(a) <= 10) or not (1 <= len(b) <= 10):
+        return 0
+
+    for arr in [a, b]:
+        if not all(1 <= num <= 100 for num in arr):
+            return 0
+
     lest_common_multiple_a = reduce(lambda x, y: x * y // gcd(x, y), a)
 
     greatest_common_divisor_b = reduce(gcd, b)
