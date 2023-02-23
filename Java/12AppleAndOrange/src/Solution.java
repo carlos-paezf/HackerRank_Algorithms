@@ -5,6 +5,11 @@ import java.util.List;
 import java.util.stream.Stream;
 import static java.util.stream.Collectors.toList;
 
+/**
+ * Created on Tue Feb 21 2023
+ * 
+ * @author Carlos Páez
+ */
 class Result {
     /*
      * Complete the 'countApplesAndOranges' function below.
