@@ -4,6 +4,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Created on Wed Feb 22 2023
+ * 
+ * @author Carlos Páez
+ */
 class Result {
     /*
      * Complete the 'kangaroo' function below.
